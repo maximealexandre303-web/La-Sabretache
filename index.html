@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miel de La Sabretache | Miel Artisanal & Noix de Lasne</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Découvrez le miel sauvage brut et les noix récoltés artisanalement dans le jardin de La Sabretache à Lasne. Production ultra-locale, authentique et respectueuse de la nature.">
+  <meta name="keywords" content="miel artisanal, sabretache, lasne, miel de lasne, noix du jardin, apiculture locale, belgique, click and collect">
+  <meta name="author" content="La Sabretache">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miel de La Sabretache | Miel Artisanal & Noix de Lasne">
+  <meta property="og:description" content="Découvrez notre miel brut sauvage et nos noix de récolte familiale à Lasne.">
+  <meta property="og:image" content="assets/images/honey.jpg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header>
+    <nav class="navbar" id="mainNavbar">
+      <a href="#" class="logo" id="navLogo">
+        <!-- SVG Bee Logo -->
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Antennae -->
+          <path d="M 48,21 C 46,17 41,16 38,18 M 52,21 C 54,17 59,16 62,18" />
+          <!-- Head -->
+          <path d="M 50,20 C 47,20 46,25 50,26 C 54,25 53,20 50,20 Z" />
+          <!-- Thorax -->
+          <path d="M 50,28 C 44,28 43,39 50,42 C 57,39 56,28 50,28 Z" />
+          <!-- Abdomen & Segments -->
+          <path d="M 50,42 C 45,46 43,58 50,75 C 57,58 55,46 50,42 Z" />
+          <!-- Abdomen Segments -->
+          <path d="M 46,47 C 48,49 52,49 54,47" />
+          <path d="M 44.5,53 C 48,56 52,56 55.5,53" />
+          <path d="M 44.2,59 C 48,63 52,63 55.8,59" />
+          <path d="M 45.8,65 C 48,69 52,69 54.2,65" />
+          <path d="M 48,70 C 49,72 51,72 52,70" />
+          <!-- Upper Left Wing -->
+          <path d="M 46,30 C 43,26 26,14 18,18 C 11,21 16,33 28,34 C 36,34.5 43,33.5 45,31" />
+          <!-- Upper Left Wing Veins -->
+          <path d="M 44,31 C 36,29 27,24 20,21" />
+          <path d="M 44,31 C 38,32 30,31 23,28" />
+          <path d="M 34,28 C 30,25 24,19 21,19" />
+          <path d="M 28,34 C 23,32 18,29 17,25" />
+          <!-- Upper Right Wing -->
+          <path d="M 54,30 C 57,26 74,14 82,18 C 89,21 84,33 72,34 C 64,34.5 57,33.5 55,31" />
+          <!-- Upper Right Wing Veins -->
+          <path d="M 56,31 C 64,29 73,24 80,21" />
+          <path d="M 56,31 C 62,32 70,31 77,28" />
+          <path d="M 66,28 C 70,25 76,19 79,19" />
+          <path d="M 72,34 C 77,32 82,29 83,25" />
+          <!-- Lower Left Wing -->
+          <path d="M 46,35 C 42,38 31,43 27,49 C 24,53 28,57 34,54 C 39,51 44,44 45,38" />
+          <!-- Lower Left Wing Veins -->
+          <path d="M 44,38 C 38,44 32,48 29,52" />
+          <path d="M 44,38 C 41,41 36,44 33,48" />
+          <!-- Lower Right Wing -->
+          <path d="M 54,35 C 58,38 69,43 73,49 C 76,53 72,57 66,54 C 61,51 56,44 55,38" />
+          <!-- Lower Right Wing Veins -->
+          <path d="M 56,38 C 62,44 68,48 71,52" />
+          <path d="M 56,38 C 59,41 64,44 67,48" />
+        </svg>
+        <span>La Sabretache</span>
+      </a>
+      
+      <ul class="nav-links" id="navList">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#histoire">Notre Histoire</a></li>
+        <li><a href="#boutique">La Boutique</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="cart-toggle" onclick="openCart()" id="btnOpenCart" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" style="display: none;">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="accueil">
+    <!-- SVG Bees Floating in background -->
+    <svg class="floating-bee bee-1" viewBox="0 0 100 100" width="40" height="40" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 48,21 C 46,17 41,16 38,18 M 52,21 C 54,17 59,16 62,18" />
+      <path d="M 50,20 C 47,20 46,25 50,26 C 54,25 53,20 50,20 Z" />
+      <path d="M 50,28 C 44,28 43,39 50,42 C 57,39 56,28 50,28 Z" />
+      <path d="M 50,42 C 45,46 43,58 50,75 C 57,58 55,46 50,42 Z" />
+      <path d="M 46,47 C 48,49 52,49 54,47" />
+      <path d="M 44.5,53 C 48,56 52,56 55.5,53" />
+      <path d="M 44.2,59 C 48,63 52,63 55.8,59" />
+      <path d="M 45.8,65 C 48,69 52,69 54.2,65" />
+      <path d="M 48,70 C 49,72 51,72 52,70" />
+      <path d="M 46,30 C 43,26 26,14 18,18 C 11,21 16,33 28,34 C 36,34.5 43,33.5 45,31" />
+      <path d="M 44,31 C 36,29 27,24 20,21" />
+      <path d="M 44,31 C 38,32 30,31 23,28" />
+      <path d="M 34,28 C 30,25 24,19 21,19" />
+      <path d="M 28,34 C 23,32 18,29 17,25" />
+      <path d="M 54,30 C 57,26 74,14 82,18 C 89,21 84,33 72,34 C 64,34.5 57,33.5 55,31" />
+      <path d="M 56,31 C 64,29 73,24 80,21" />
+      <path d="M 56,31 C 62,32 70,31 77,28" />
+      <path d="M 66,28 C 70,25 76,19 79,19" />
+      <path d="M 72,34 C 77,32 82,29 83,25" />
+      <path d="M 46,35 C 42,38 31,43 27,49 C 24,53 28,57 34,54 C 39,51 44,44 45,38" />
+      <path d="M 44,38 C 38,44 32,48 29,52" />
+      <path d="M 44,38 C 41,41 36,44 33,48" />
+      <path d="M 54,35 C 58,38 69,43 73,49 C 76,53 72,57 66,54 C 61,51 56,44 55,38" />
+      <path d="M 56,38 C 62,44 68,48 71,52" />
+      <path d="M 56,38 C 59,41 64,44 67,48" />
+    </svg>
+    <svg class="floating-bee bee-2" viewBox="0 0 100 100" width="30" height="30" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 48,21 C 46,17 41,16 38,18 M 52,21 C 54,17 59,16 62,18" />
+      <path d="M 50,20 C 47,20 46,25 50,26 C 54,25 53,20 50,20 Z" />
+      <path d="M 50,28 C 44,28 43,39 50,42 C 57,39 56,28 50,28 Z" />
+      <path d="M 50,42 C 45,46 43,58 50,75 C 57,58 55,46 50,42 Z" />
+      <path d="M 46,47 C 48,49 52,49 54,47" />
+      <path d="M 44.5,53 C 48,56 52,56 55.5,53" />
+      <path d="M 44.2,59 C 48,63 52,63 55.8,59" />
+      <path d="M 45.8,65 C 48,69 52,69 54.2,65" />
+      <path d="M 48,70 C 49,72 51,72 52,70" />
+      <path d="M 46,30 C 43,26 26,14 18,18 C 11,21 16,33 28,34 C 36,34.5 43,33.5 45,31" />
+      <path d="M 44,31 C 36,29 27,24 20,21" />
+      <path d="M 44,31 C 38,32 30,31 23,28" />
+      <path d="M 34,28 C 30,25 24,19 21,19" />
+      <path d="M 28,34 C 23,32 18,29 17,25" />
+      <path d="M 54,30 C 57,26 74,14 82,18 C 89,21 84,33 72,34 C 64,34.5 57,33.5 55,31" />
+      <path d="M 56,31 C 64,29 73,24 80,21" />
+      <path d="M 56,31 C 62,32 70,31 77,28" />
+      <path d="M 66,28 C 70,25 76,19 79,19" />
+      <path d="M 72,34 C 77,32 82,29 83,25" />
+      <path d="M 46,35 C 42,38 31,43 27,49 C 24,53 28,57 34,54 C 39,51 44,44 45,38" />
+      <path d="M 44,38 C 38,44 32,48 29,52" />
+      <path d="M 44,38 C 41,41 36,44 33,48" />
+      <path d="M 54,35 C 58,38 69,43 73,49 C 76,53 72,57 66,54 C 61,51 56,44 55,38" />
+      <path d="M 56,38 C 62,44 68,48 71,52" />
+      <path d="M 56,38 C 59,41 64,44 67,48" />
+    </svg>
+    <svg class="floating-bee bee-3" viewBox="0 0 100 100" width="35" height="35" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 48,21 C 46,17 41,16 38,18 M 52,21 C 54,17 59,16 62,18" />
+      <path d="M 50,20 C 47,20 46,25 50,26 C 54,25 53,20 50,20 Z" />
+      <path d="M 50,28 C 44,28 43,39 50,42 C 57,39 56,28 50,28 Z" />
+      <path d="M 50,42 C 45,46 43,58 50,75 C 57,58 55,46 50,42 Z" />
+      <path d="M 46,47 C 48,49 52,49 54,47" />
+      <path d="M 44.5,53 C 48,56 52,56 55.5,53" />
+      <path d="M 44.2,59 C 48,63 52,63 55.8,59" />
+      <path d="M 45.8,65 C 48,69 52,69 54.2,65" />
+      <path d="M 48,70 C 49,72 51,72 52,70" />
+      <path d="M 46,30 C 43,26 26,14 18,18 C 11,21 16,33 28,34 C 36,34.5 43,33.5 45,31" />
+      <path d="M 44,31 C 36,29 27,24 20,21" />
+      <path d="M 44,31 C 38,32 30,31 23,28" />
+      <path d="M 34,28 C 30,25 24,19 21,19" />
+      <path d="M 28,34 C 23,32 18,29 17,25" />
+      <path d="M 54,30 C 57,26 74,14 82,18 C 89,21 84,33 72,34 C 64,34.5 57,33.5 55,31" />
+      <path d="M 56,31 C 64,29 73,24 80,21" />
+      <path d="M 56,31 C 62,32 70,31 77,28" />
+      <path d="M 66,28 C 70,25 76,19 79,19" />
+      <path d="M 72,34 C 77,32 82,29 83,25" />
+      <path d="M 46,35 C 42,38 31,43 27,49 C 24,53 28,57 34,54 C 39,51 44,44 45,38" />
+      <path d="M 44,38 C 38,44 32,48 29,52" />
+      <path d="M 44,38 C 41,41 36,44 33,48" />
+      <path d="M 54,35 C 58,38 69,43 73,49 C 76,53 72,57 66,54 C 61,51 56,44 55,38" />
+      <path d="M 56,38 C 62,44 68,48 71,52" />
+      <path d="M 56,38 C 59,41 64,44 67,48" />
+    </svg>
+    
+    <div class="hero-content">
+      <span class="hero-tagline">Récoltes Sauvages & Familiales</span>
+      <h1>Le Goût Pur de <span>La Sabretache</span></h1>
+      <p class="hero-desc">Un miel d'exception récolté avec passion par notre apiculteur et des noix sauvages cueillies à la main dans notre jardin de Lasne.</p>
+      <a href="#boutique" class="btn-primary">
+        <span>Découvrir la Boutique</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       STORY & CONCEPT SECTION
+       ========================================================================== -->
+  <section class="section scroll-reveal" id="histoire">
+    <div class="section-header">
+      <span class="section-tag">Une Démarche Authentique</span>
+      <h2 class="section-title">Notre Jardin, Leurs Ruches</h2>
+    </div>
+    
+    <div class="story-grid">
+      <div class="story-image-wrapper">
+        <img src="assets/images/honey.jpg" alt="Pots de miel de La Sabretache alignés dans le jardin">
+      </div>
+      
+      <div class="story-info">
+        <p>Dans le calme verdoyant de notre jardin à <strong>Lasne</strong>, nos ruches vivent au rythme des saisons. Pour en prendre le plus grand soin, nous avons mis en place un partenariat privilégié : <strong>un apiculteur professionnel</strong> vient régulièrement s'occuper de nos colonies d'abeilles et réaliser les récoltes avec des méthodes traditionnelles respectueuses du cycle naturel.</p>
+        
+        <p>Le résultat ? Un miel sauvage brut, d'une grande pureté, confectionné à partir des fleurs de Lasne et récolté à La Sabretache. Chaque bocal est un trésor unique qui capture l'essence préservée de notre environnement.</p>
+        
+        <div class="highlight-box">
+          « Un miel préservé et des noix de pays ramassées à la main sous le grand noyer de notre jardin. Tout simplement naturel. »
+        </div>
+      </div>
+    </div>
+    
+    <!-- Three values feature cards -->
+    <div class="features">
+      <div class="feature-card scroll-reveal">
+        <div class="feature-icon">
+          <!-- Honeycomb SVG -->
+          <svg viewBox="0 0 24 24"><path d="M12 2L4.5 6.3v8.6L12 19.2l7.5-4.3V6.3L12 2zm5.5 12L12 17.2 6.5 14V7.7L12 4.5l5.5 3.2V14z"/></svg>
+        </div>
+        <h3>Miel 100% Brut</h3>
+        <p>Directement mis en pot après extraction. Non pasteurisé et filtré à froid pour préserver toutes ses vertus nutritionnelles et ses saveurs brutes.</p>
+      </div>
+      
+      <div class="feature-card scroll-reveal">
+        <div class="feature-icon">
+          <!-- Tree SVG -->
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.69 2 6 4.69 6 8c0 2.24 1.25 4.19 3.09 5.22L7 19.5c-.17.41.13.85.58.85h8.84c.45 0 .75-.44.58-.85l-2.09-6.28C16.75 12.19 18 10.24 18 8c0-3.31-2.69-6-6-6zm0 16h-3.5L10 13.5h4L15.5 18H12z"/></svg>
+        </div>
+        <h3>Noix Sauvages de Pays</h3>
+        <p>Ramassées à maturité à l'automne, séchées de manière naturelle et ensachées avec amour. Aucun traitement chimique.</p>
+      </div>
+      
+      <div class="feature-card scroll-reveal">
+        <div class="feature-icon">
+          <!-- Hand SVG -->
+          <svg viewBox="0 0 24 24"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm-1 15v-3h-3v-2h3v-3h2v3h3v2h-3v3h-2z"/></svg>
+        </div>
+        <h3>Vente Ultra-Locale</h3>
+        <p>Pas d'intermédiaires, pas de transport de masse. Retrait direct à Lasne en mode click-and-collect chaleureux.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRODUCTS SECTION (BOUTIQUE)
+       ========================================================================== -->
+  <section class="boutique" id="boutique">
+    <div class="boutique-container">
+      <div class="section-header scroll-reveal">
+        <span class="section-tag" style="color: var(--color-amber-dark)">Le Jardin de La Sabretache</span>
+        <h2 class="section-title" style="color: var(--color-forest-dark)">La Boutique Sauvage</h2>
+        <p style="color: var(--color-charcoal-light); margin-top: 0.5rem;">Découvrez notre récolte très limitée. Commandez en ligne et retirez vos produits directement chez nous à Lasne.</p>
+      </div>
+      
+      <div class="products-grid">
+        <!-- PRODUCT 1: Honey -->
+        <article class="product-card scroll-reveal">
+          <div class="product-image-container">
+            <span class="product-badge gold">Miel d'Été 2025</span>
+            <img src="assets/images/honey.jpg" alt="Pots de Miel Artisanal La Sabretache">
+          </div>
+          <div class="product-content">
+            <div class="product-meta">
+              <h3 class="product-title">Miel de La Sabretache</h3>
+              <span class="product-price">7,00 €</span>
+            </div>
+            <p class="product-details">Pot en verre de 250 g</p>
+            <p class="product-desc">Notre miel d'été récolté à La Sabretache (Lasne). Texture veloutée, arômes fruités et sauvages de fleurs de sous-bois. Un régal artisanal brut en quantité très limitée.</p>
+            <button class="btn-add-cart" onclick="addToCart('honey')" aria-label="Ajouter le miel au panier">
+              <svg viewBox="0 0 24 24"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3h-3v2h3v12h2V8c0-1.1-.9-2-2-2z"/></svg>
+              <span>Ajouter au Panier</span>
+            </button>
+          </div>
+        </article>
+        
+        <!-- PRODUCT 2: Walnuts Whole -->
+        <article class="product-card scroll-reveal">
+          <div class="product-image-container">
+            <span class="product-badge">Récolte d'Automne</span>
+            <img src="assets/images/walnuts.png" alt="Noix entières dans leur coque">
+          </div>
+          <div class="product-content">
+            <div class="product-meta">
+              <h3 class="product-title">Noix en Coque</h3>
+              <span class="product-price">5,00 €</span>
+            </div>
+            <p class="product-details">Sachet en toile de jute de 500 g</p>
+            <p class="product-desc">Noix entières récoltées dans notre jardin de Lasne. Séchées au grand air de manière traditionnelle, idéales à casser au coin du feu pour le goûter ou les salades.</p>
+            <button class="btn-add-cart" onclick="addToCart('walnuts_whole')" aria-label="Ajouter les noix en coque au panier">
+              <svg viewBox="0 0 24 24"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3h-3v2h3v12h2V8c0-1.1-.9-2-2-2z"/></svg>
+              <span>Ajouter au Panier</span>
+            </button>
+          </div>
+        </article>
+        
+        <!-- PRODUCT 3: Walnuts Shelled -->
+        <article class="product-card scroll-reveal">
+          <div class="product-image-container">
+            <span class="product-badge">Préparation Artisanale</span>
+            <img src="assets/images/walnuts.png" alt="Cerneaux de noix décortiqués">
+          </div>
+          <div class="product-content">
+            <div class="product-meta">
+              <h3 class="product-title">Cerneaux de Noix</h3>
+              <span class="product-price">6,00 €</span>
+            </div>
+            <p class="product-details">Sachet kraft de 250 g</p>
+            <p class="product-desc">Cerneaux de noix issus de notre jardin, décortiqués délicatement à la main. Prêts à l'emploi et soigneusement sélectionnés pour vos pâtisseries, fromages et salades d'hiver.</p>
+            <button class="btn-add-cart" onclick="addToCart('walnuts_shelled')" aria-label="Ajouter les cerneaux de noix au panier">
+              <svg viewBox="0 0 24 24"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3h-3v2h3v12h2V8c0-1.1-.9-2-2-2z"/></svg>
+              <span>Ajouter au Panier</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODAL DIALOG: SHOPPING CART DRAWER (Light-dismiss active)
+       ========================================================================== -->
+  <dialog id="cartDrawer" closedby="any" aria-labelledby="cartTitle">
+    <div class="cart-header">
+      <h2 id="cartTitle">Votre Panier</h2>
+      <button class="btn-close-cart" onclick="closeCart()" aria-label="Fermer le panier">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    
+    <!-- Rendered Dynamically by JS -->
+    <div class="cart-items-container">
+      <!-- Fallback empty state in case script is loading -->
+      <div class="cart-empty-message">
+        <svg viewBox="0 0 24 24"><path d="M17.21 9l-4.38-6.56c-.18-.28-.5-.44-.83-.44s-.65.16-.83.44L6.79 9H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h.08l1.49 8.28c.11.58.61 1.01 1.2 1.01h14.46c.59 0 1.09-.43 1.2-1.01L21.92 12h.08c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1h-4.79zM9 9l3-4.5L15 9H9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+        <p>Votre panier est vide pour l'instant.</p>
+      </div>
+    </div>
+    
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <span>Sous-total</span>
+        <span class="total-price">0.00 €</span>
+      </div>
+      
+      <!-- Customer Information Form -->
+      <form class="checkout-form" id="checkoutForm" onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label for="custName">Votre Nom Complet</label>
+          <input type="text" id="custName" placeholder="Ex. Jean Dupont" required disabled>
+        </div>
+        
+        <div class="form-group">
+          <label for="pickupOption">Mode de Retrait</label>
+          <select id="pickupOption" disabled>
+            <option value="collect">Retrait à La Sabretache (Lasne)</option>
+            <option value="delivery">Livraison locale (Proximité Lasne)</option>
+          </select>
+        </div>
+        
+        <div class="checkout-actions">
+          <!-- WhatsApp order validation button -->
+          <button type="button" class="btn-checkout whatsapp" onclick="handleCheckout('whatsapp')" disabled aria-label="Commander sur WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.97 4.46-9.97 9.963 0 1.76.458 3.475 1.33 5L2 22l5.187-1.36c1.474.805 3.126 1.228 4.815 1.228h.005c5.505 0 9.97-4.46 9.97-9.963C21.977 6.46 17.514 2 12.012 2zm5.83 14.1c-.24.675-1.4 1.313-1.925 1.396-.474.075-.92.368-3.013-.45-2.51-.98-4.116-3.52-4.24-3.687-.124-.165-.93-1.233-.93-2.355 0-1.12.583-1.67.792-1.895.21-.226.458-.282.61-.282.155 0 .31.002.443.008.14.006.326-.053.51.393.19.462.653 1.59.71 1.704.057.114.095.247.018.4-.076.152-.114.246-.228.378-.114.133-.24.296-.34.398-.11.114-.23.24-.097.468.133.228.59 1.002 1.27 1.6 1.002.88 1.597 1.135 1.827 1.246.228.114.36.095.494-.057.133-.152.57-.665.722-.892.152-.228.305-.19.513-.114.21.076 1.326.626 1.554.74.228.114.38.17.437.266.057.095.057.55-.183 1.225z"/></svg>
+            <span>Sur WhatsApp</span>
+          </button>
+          
+          <!-- Email order validation button -->
+          <button type="button" class="btn-checkout email" onclick="handleCheckout('email')" disabled aria-label="Commander par Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Par E-mail</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- ==========================================================================
+       FOOTER & CONTACT SECTION
+       ========================================================================== -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <!-- Column 1: Brand description -->
+      <div class="footer-brand">
+        <h3>La Sabretache</h3>
+        <p>Un écrin de nature sauvage au cœur de Lasne, où nos abeilles et nos arbres produisent le meilleur de notre terroir de manière ultra-artisanale.</p>
+        <!-- Stamp Honey comb -->
+        <svg class="bee-stamp" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Antennae -->
+          <path d="M 48,21 C 46,17 41,16 38,18 M 52,21 C 54,17 59,16 62,18" />
+          <!-- Head -->
+          <path d="M 50,20 C 47,20 46,25 50,26 C 54,25 53,20 50,20 Z" />
+          <!-- Thorax -->
+          <path d="M 50,28 C 44,28 43,39 50,42 C 57,39 56,28 50,28 Z" />
+          <!-- Abdomen & Segments -->
+          <path d="M 50,42 C 45,46 43,58 50,75 C 57,58 55,46 50,42 Z" />
+          <!-- Abdomen Segments -->
+          <path d="M 46,47 C 48,49 52,49 54,47" />
+          <path d="M 44.5,53 C 48,56 52,56 55.5,53" />
+          <path d="M 44.2,59 C 48,63 52,63 55.8,59" />
+          <path d="M 45.8,65 C 48,69 52,69 54.2,65" />
+          <path d="M 48,70 C 49,72 51,72 52,70" />
+          <!-- Upper Left Wing -->
+          <path d="M 46,30 C 43,26 26,14 18,18 C 11,21 16,33 28,34 C 36,34.5 43,33.5 45,31" />
+          <!-- Upper Left Wing Veins -->
+          <path d="M 44,31 C 36,29 27,24 20,21" />
+          <path d="M 44,31 C 38,32 30,31 23,28" />
+          <path d="M 34,28 C 30,25 24,19 21,19" />
+          <path d="M 28,34 C 23,32 18,29 17,25" />
+          <!-- Upper Right Wing -->
+          <path d="M 54,30 C 57,26 74,14 82,18 C 89,21 84,33 72,34 C 64,34.5 57,33.5 55,31" />
+          <!-- Upper Right Wing Veins -->
+          <path d="M 56,31 C 64,29 73,24 80,21" />
+          <path d="M 56,31 C 62,32 70,31 77,28" />
+          <path d="M 66,28 C 70,25 76,19 79,19" />
+          <path d="M 72,34 C 77,32 82,29 83,25" />
+          <!-- Lower Left Wing -->
+          <path d="M 46,35 C 42,38 31,43 27,49 C 24,53 28,57 34,54 C 39,51 44,44 45,38" />
+          <!-- Lower Left Wing Veins -->
+          <path d="M 44,38 C 38,44 32,48 29,52" />
+          <path d="M 44,38 C 41,41 36,44 33,48" />
+          <!-- Lower Right Wing -->
+          <path d="M 54,35 C 58,38 69,43 73,49 C 76,53 72,57 66,54 C 61,51 56,44 55,38" />
+          <!-- Lower Right Wing Veins -->
+          <path d="M 56,38 C 62,44 68,48 71,52" />
+          <path d="M 56,38 C 59,41 64,44 67,48" />
+        </svg>
+      </div>
+      
+      <!-- Column 2: Navigation Links -->
+      <nav class="footer-links" aria-label="Navigation pied de page">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#histoire">Notre Histoire</a></li>
+          <li><a href="#boutique">La Boutique</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Column 3: Contact & Info -->
+      <div class="footer-contact">
+        <h4>Informations & Retrait</h4>
+        
+        <div class="contact-item">
+          <!-- Pin Map SVG -->
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span><strong>La Sabretache</strong><br>Lasne, Belgique (Adresse communiquée lors de la réservation)</span>
+        </div>
+        
+        <div class="contact-item">
+          <!-- Mail SVG -->
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>contact@sabretache.be</span>
+        </div>
+        
+        <div class="contact-item">
+          <!-- Info SVG -->
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          <span>Paiement sur place lors du retrait en espèces ou via virement mobile.</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer bottom notes -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 La Sabretache. Tous droits réservés. Production familiale.</p>
+      <p>Artisanat sauvage de Lasne 🍯🍂</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SCRIPTS
+       ========================================================================== -->
+  <script src="app.js"></script>
+</body>
+</html>
