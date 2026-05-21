@@ -16,21 +16,21 @@ const PRODUCTS = {
     name: 'Miel de La Sabretache',
     price: 7.00,
     unit: 'pot de 250g',
-    img: 'assets/images/honey.jpg'
+    img: 'honey.jpg'
   },
   walnuts_whole: {
     id: 'walnuts_whole',
     name: 'Noix du Jardin (Entières)',
     price: 5.00,
     unit: 'sachet de 500g',
-    img: 'assets/images/walnuts.png'
+    img: 'walnuts.png'
   },
   walnuts_shelled: {
     id: 'walnuts_shelled',
     name: 'Cerneaux de Noix (Décortiqués)',
     price: 6.00,
     unit: 'sachet de 250g',
-    img: 'assets/images/walnuts.png' // using the same beautiful generated photo
+    img: 'walnuts.png' // using the same beautiful generated photo
   }
 };
 
