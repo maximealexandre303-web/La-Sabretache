@@ -13,24 +13,10 @@ const ARTISAN_EMAIL = 'patsy3.massange@gmail.com';
 const PRODUCTS = {
   honey: {
     id: 'honey',
-    name: 'Miel de La Sabretache',
-    price: 7.00,
+    name: 'Miel de Printemps de La Sabretache',
+    price: 8.00,
     unit: 'pot de 250g',
-    img: 'honey.jpg'
-  },
-  walnuts_whole: {
-    id: 'walnuts_whole',
-    name: 'Noix du Jardin (Entières)',
-    price: 5.00,
-    unit: 'sachet de 500g',
-    img: 'walnuts.png'
-  },
-  walnuts_shelled: {
-    id: 'walnuts_shelled',
-    name: 'Cerneaux de Noix (Décortiqués)',
-    price: 6.00,
-    unit: 'sachet de 250g',
-    img: 'walnuts.png' // using the same beautiful generated photo
+    img: 'assets/images/honey.jpg'
   }
 };
 
@@ -304,7 +290,7 @@ function handleCheckout(channel) {
     const whatsappUrl = `https://wa.me/${ARTISAN_WHATSAPP_NUMBER}?text=${encodedText}`;
     window.open(whatsappUrl, '_blank');
   } else if (channel === 'email') {
-    const subject = encodeURIComponent(`Réservation Miel & Noix - Sabretache - ${name}`);
+    const subject = encodeURIComponent(`Réservation Miel de Printemps - Sabretache - ${name}`);
     const encodedBody = encodeURIComponent(rawMessage);
     const mailtoUrl = `mailto:${ARTISAN_EMAIL}?subject=${subject}&body=${encodedBody}`;
     window.location.href = mailtoUrl;
